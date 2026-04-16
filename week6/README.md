@@ -83,10 +83,9 @@ screenshot shows the active interface details after setup.
  
 ## Verification
  
-
- The screenshots display interface inspections by the use of 'ifconfig', connectivity inspections by the use of 'ping', and ARP inspections by the use of 'arp -a' or other similar commands. This coincides with the key concepts of the Week 6 lecture, where ARP is employed to translate IP addresses to MAC addresses within a local network prior to the frame delivery: :contentReference[oaicite:1]{index=1}
- 
 Lecture ARP is applied when a device has the destination IP address but does not have the corresponding MAC address on the LAN. The ARP request is made broadcast and ARP reply is sent back as unicast. :contentReference[oaicite:2]{index=2}
+ 
+
 ---
  
 ## Result
