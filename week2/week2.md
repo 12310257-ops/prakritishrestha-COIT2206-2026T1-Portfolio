@@ -41,10 +41,10 @@ iface eth0 inet static
 ![Topology](topology.png)
 
 ### Host 1 Configuration
-![Host1](Configh1.png)
+![Host1](configh1.png)
 
 ### Host 2 Configuration
-![Host2](Configh2.png)
+![Host2](configh2.png)
 
 ### IP Address Host1
 ![IP1](h1ipaddres.png)
@@ -69,5 +69,5 @@ iface eth0 inet static
 ![Ping2](ping-sucess4to2.png)
 
 ### Ping Test (Failure)
-![Failure](h1pingfailure.png)
+![Failure](h1pingfailed.png)
 
