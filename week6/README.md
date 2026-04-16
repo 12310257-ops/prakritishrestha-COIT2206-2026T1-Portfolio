@@ -5,9 +5,9 @@ week focused on ARP and basic address resolution in a routed network.
 ---
  
 ## Topology
-![Topology](image.png)
+![Topology](TOPOLOGY.png)
  
-This topology shows two LANs connected through two routers. The left side contains HostA to HostD and the right side contains Host1 to Host4.
+topology shown 2 LANs connected through two routers, where left hand side contains HostA to HostD and the right hand side contains Host1 to Host4.
  
 ---
  
@@ -16,46 +16,46 @@ This topology shows two LANs connected through two routers. The left side contai
 ### HostA
 ![HostA](hostA.png)
  
-HostA was configured with a static IP address in the 10.10.10.0/24 network and used Router1 as the default gateway.
+It was configured with a static IP address in the 10.10.10.0/24 network and  Router1 as the default gateway.
  
 ### HostB
-![HostB](hostB.png)
+![HostB](HostBB.png)
  
-HostB was configured in the same subnet as HostA with a different host address.
+It was configured in the same subnet as HostA with a different host address.
  
 ### HostC
 ![HostC](hostC.png)
  
-HostC was configured with a static IP in the same left-side network and used the same gateway.
+It was configured with a static IP in the same left side network and used the same gateway.
  
 ### HostD
 ![HostD](hostD.png)
  
-HostD was also configured in the 10.10.10.0/24 subnet.
+In HOST D, it  was also configured in the 10.10.10.0/24 subnet.
  
 ---
  
 ## Right LAN Host Configurations
  
-### Host1
+### Host1:configured in the 10.10.20.0/24 network.
 ![Host1](host1.png)
  
-Host1 was configured in the 10.10.20.0/24 network.
+
  
-### Host2
+### Host2: configured with a static IP in the same subnet as Host1.
 ![Host2](host2.png)
  
-Host2 was configured with a static IP in the same subnet as Host1.
+
  
-### Host3
-![Host3](host3.png)
+### Host3 :configured in the right-side LAN and used Router2 as the default gateway.
+![Host3](host33.png)
  
-Host3 was configured in the right-side LAN and used Router2 as the default gateway.
+
  
-### Host4
+### Host4 : also configured in the same subnet and checked using interface commands
 ![Host4](host4.png)
  
-Host4 was also configured in the same subnet and checked using interface commands.
+
  
 ---
  
@@ -64,31 +64,31 @@ Host4 was also configured in the same subnet and checked using interface command
 ### Router1
 ![Router1 Config](router1.png)
  
-Router1 connects the left LAN to the inter-router network. IP forwarding was enabled so packets could move between networks.
+It connects the left LAN to the inter-router network, where IP forwarding was enabled so packets could move between networks.
  
 ![Router1 Check](router1.1.png)
  
-This screenshot shows interface checking after configuration.
+screenshot shows interface checking after configuration.
  
 ### Router2
 ![Router2 Config](router2.png)
  
-Router2 connects the inter-router network to the right LAN. IP forwarding was also enabled here.
+connects the inter-router network to the right LAN. IP forwarding was also enabled here.
  
-![Router2 Check](router2.2.png)
+![Router2 Check](router-2.2.png)
  
-This screenshot shows the active interface details after setup.
+screenshot shows the active interface details after setup.
  
 ---
  
-## Testing and Verification
+## Verification
  
-The screenshots show interface checks using `ifconfig`, connectivity checks using `ping`, and ARP checking using `arp -a` or related commands. This matches the main ideas from the Week 6 lecture, where ARP is used to map IP addresses to MAC addresses inside a local network before frames can be delivered. :contentReference[oaicite:1]{index=1}
+
+ The screenshots display interface inspections by the use of 'ifconfig', connectivity inspections by the use of 'ping', and ARP inspections by the use of 'arp -a' or other similar commands. This coincides with the key concepts of the Week 6 lecture, where ARP is employed to translate IP addresses to MAC addresses within a local network prior to the frame delivery: :contentReference[oaicite:1]{index=1}
  
-From the lecture, ARP is used when a device knows the destination IP address but still needs the matching MAC address on the LAN. The ARP request is broadcast and the ARP reply is sent back as unicast. :contentReference[oaicite:2]{index=2}
- 
+Lecture ARP is applied when a device has the destination IP address but does not have the corresponding MAC address on the LAN. The ARP request is made broadcast and ARP reply is sent back as unicast. :contentReference[oaicite:2]{index=2}
 ---
  
 ## Result
-The network devices were configured with static IP addresses, routers were set to forward packets, and connectivity tests were used to verify communication. ARP-related checks helped confirm how devices resolved addresses on the local network.
+It were configured with static IP addresses. And also routers  were set to forward packets. The connectivity tests were used to verify communication. 
 
