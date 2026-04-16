@@ -9,11 +9,10 @@ Two tasks were performed:
 
 ---
 
-#  Task 1: VLAN Configuration on Switch
-![Task1 Network](projectcreate.png)
+
 ##  Network Topology
 
-![Task1 Network](topology.png)
+![Task1 Network](ttopology.png)
 
 📌 The topology shows 4 hosts connected to a switch without a router.
 
